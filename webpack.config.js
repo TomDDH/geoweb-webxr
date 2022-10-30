@@ -6,6 +6,8 @@ const CopyPlugin = require("copy-webpack-plugin");
 const dist = path.resolve(__dirname, "dist");
 const src = path.resolve(__dirname, "src");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const Dotenv = require('dotenv-webpack');
+
 
 module.exports = {
   entry: path.resolve(src, "index.js"),
@@ -53,6 +55,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(src, "index.html"),
     }),
+    new Dotenv(),
     new MiniCssExtractPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     // new CopyPlugin({
