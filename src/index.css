@@ -1,0 +1,47 @@
+
+  
+  html, body {
+      /* position: fixed; */
+      top: 0;
+      margin: 0;
+      padding: 0;
+      /* overflow: hidden; */
+      height: 100%;
+      width: 100%;
+    }
+
+    #container{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 50px;
+      font-size: 2rem;
+    }
+
+    #start-ar{
+    /* display: none; */
+    font-size: 2rem;
+    }
+
+    #debug-data{
+      padding: 20px;
+      width: 70vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: white;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      /* z-index: -10; */
+    }
